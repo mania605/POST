@@ -2,11 +2,14 @@ import { Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Contact from './pages/Contact';
-import Gallery from './pages/Gallery';
-import Member from './pages/Member';
+import Brand from './pages/Brand';
+import Product from './pages/Product';
+// import Gallery from './pages/Gallery';
+// import Member from './pages/Member';
 import Post from './pages/Post';
 import Youtube from './pages/Youtube';
 import Home from './pages/Home';
+import BackgroundVideo from './pages/BackgroundVideo';
 
 function App() {
 	return (
@@ -20,6 +23,10 @@ function App() {
 				<Route path='/youtube' element={<Youtube />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='/post' element={<Post />} />
+
+				<Route path='/product' element={<Product />} />
+				<Route path='/brand' element={<Brand />} />
+				<Route path='/backgroundVideo' element={<BackgroundVideo />} />
 			</Routes>
 
 			<Footer />

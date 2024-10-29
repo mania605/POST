@@ -11,6 +11,7 @@ export default function Post() {
 			setPosts(res.data);
 		});
 	}, []);
+
 	return (
 		<Layout title='Post'>
 			{Posts.map(post => {

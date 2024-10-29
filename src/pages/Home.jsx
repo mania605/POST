@@ -1,9 +1,10 @@
 import Layout from '../components/Layout';
+import Visual from '../components/Visual';
 
 export default function Home() {
 	return (
-		<Layout title='Home'>
-			<p>Home Page</p>
+		<Layout title={'HOME'}>
+			<Visual />
 		</Layout>
 	);
 }
