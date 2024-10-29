@@ -5,5 +5,6 @@ from .import views
 
 #주소창에 localhost:8000/posts 라는 오ㅛ청이 들어오면 아래 url패턴이 인지해서 view 파일에있는 posts함수 실행
 urlpatterns = [
-  path('posts', views.posts, name='posts')
+  path('posts', views.posts, name='posts'),
+  path('posts/<slug:slug>/', views.posts_detail, name='post-detail')
 ]
