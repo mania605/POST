@@ -10,6 +10,7 @@ import Post from './pages/Post';
 import Youtube from './pages/Youtube';
 import Home from './pages/Home';
 import BackgroundVideo from './pages/BackgroundVideo';
+import PostAdd from './pages/PostAdd';
 
 function App() {
 	return (
@@ -27,6 +28,7 @@ function App() {
 				<Route path='/product' element={<Product />} />
 				<Route path='/brand' element={<Brand />} />
 				<Route path='/backgroundVideo' element={<BackgroundVideo />} />
+				<Route path='/post-add' element={<PostAdd />} />
 			</Routes>
 
 			<Footer />
