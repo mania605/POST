@@ -1,0 +1,18 @@
+header {
+	width: 100%;
+	padding: 30px 10vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #bbb;
+
+	.logo {
+		font-size: 1.4rem;
+	}
+
+	.gnb {
+		font-size: 1rem;
+		display: flex;
+		gap: 30px;
+	}
+}

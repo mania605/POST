@@ -1,0 +1,11 @@
+main {
+	width: 100%;
+	min-height: 80vh;
+	padding: 10vh 10vw;
+
+	& > h2 {
+		font: normal 7rem/1 'arial';
+		color: #555;
+		margin-bottom: 60px;
+	}
+}

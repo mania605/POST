@@ -1,0 +1,13 @@
+//common style
+@import 'common/reset';
+@import 'common/header';
+@import 'common/footer';
+@import 'common/layout';
+
+//page style
+@import 'pages/home';
+@import 'pages/member';
+@import 'pages/post';
+@import 'pages/gallery';
+@import 'pages/youtube';
+@import 'pages/contact';
