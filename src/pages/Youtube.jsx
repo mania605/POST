@@ -1,9 +1,10 @@
-import { useState, useEffect } from 'react';
+// import { useState } from 'react';
+import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
-import useShortenText from '../../hooks/useShortenText';
-import useCombineText from '../../hooks/useCombineText';
-import { useYoutubeQuery } from '../../hooks/useYoutube';
+import useShortenText from '../hooks/useShortenText';
+import useCombineText from '../hooks/useCombineText';
+import { useYoutubeQuery } from '../hooks/useYoutube';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation, EffectCoverflow } from 'swiper/modules';
 
@@ -24,8 +25,8 @@ export default function Youtube() {
 	const { data: Vids, isPending } = useYoutubeQuery({ type: 'B' });
 
 	//유튜브 데이터를 받을 state와 state변경함수 useState로 생성 이때 초기값을 빈 배열
-	const [Vids, setVids] = useState([]);
-	console.log(Vids);
+	// const [Vids, setVids] = useState([]);
+	// console.log(Vids);
 
 	// //유튜브 데이터를 가져와서 Vids 상태에 담아주는 함수 정의
 	// const fetchYoutube = () => {

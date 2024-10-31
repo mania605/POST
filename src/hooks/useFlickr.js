@@ -13,8 +13,8 @@ const fetchFlickr = async ({ queryKey }) => {
 	const method_search = 'flickr.photos.search';
 
 	const flickr_api = import.meta.env.VITE_FLICKR_API;
-	const myID = '197119297@N02';
-	const num = 19;
+	const myID = '201491599@N03';
+	const num = 9;
 	let url = '';
 	const urlMine = `${baseURL}?method=${method_mine}&api_key=${flickr_api}&user_id=${myID}&per_page=${num}&nojsoncallback=1&format=json`;
 	const urlInterest = `${baseURL}?method=${method_interest}&api_key=${flickr_api}&per_page=${num}&nojsoncallback=1&format=json`;
@@ -33,7 +33,7 @@ const fetchFlickr = async ({ queryKey }) => {
 
 export const useFlickrQuery = opt => {
 	return useQuery({
-		queryKey: ['flickrQuery', opt],//순서2- 갤러리 컴포넌트로부터 전달받은 opt값을 내부 고유 쿼리키 생성하는데 활용
+		queryKey: ['flickrQuery', opt], //순서2- 갤러리 컴포넌트로부터 전달받은 opt값을 내부 고유 쿼리키 생성하는데 활용
 		queryFn: fetchFlickr, //순서3 - 쿼리키로 전달된 opt값을 fetchFlickr함수에 전달하면서 호출
 		staleTime: 1000 * 60,
 		gcTime: 1000 * 60

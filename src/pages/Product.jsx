@@ -47,7 +47,6 @@ import Layout from '../components/Layout';
 import BackgroundVideo from './BackgroundVideo';
 import Pic from '../components/Pic';
 
-
 export default function Product() {
     const [ Flickr, setFlickr ] = useState([]);
     console.log(Flickr);
@@ -68,13 +67,13 @@ export default function Product() {
 
     return (
         <div className="product-page">
-            <BackgroundVideo /> 
+            <BackgroundVideo />
             <Layout title={"Product"}>
                 <section className='productList'>
                     {Flickr.map((data, idx) => {
                         return (
                             <article key={idx}>
-                                <Pic 
+                                <Pic
                                     src={`https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_z.jpg`}
                                     className = 'pic'
                                 />
