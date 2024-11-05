@@ -8,9 +8,12 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
 import os
+import sys
 
-from django.core.wsgi import get_wsgi_application
+# 프로젝트 루트 경로를 sys.path에 추가
+sys.path.append(r'C:\Users\mania\Desktop\POST')
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'post.settings')
 
+from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
