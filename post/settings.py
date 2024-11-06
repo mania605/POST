@@ -72,6 +72,10 @@ CORS_ALLOW_METHODS = [
     "OPTIONS"
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://post-1htn.onrender.com'
+]
+
 
 ROOT_URLCONF = 'post.urls'
 
